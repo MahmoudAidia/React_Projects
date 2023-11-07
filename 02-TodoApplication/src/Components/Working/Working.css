@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rendered-todo {
+  background-color: #114678;
+  padding: 1.5rem 3rem;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.rendered-todo:hover {
+  transform: translate(0, -2px);
+  /* background-color: #295986; */
+  cursor: pointer;
+}
+
+.todo-id {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  background-color: #255079;
+  border-radius: 10px;
+}
+
+.check-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: #4683bc;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.4s;
+}
+
+.check-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 #8cb2d5;
+}
+
+@media (max-width: 600px) {
+  .check-btn {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1rem 1rem;
+  }
+
+  .todo-id {
+    font-size: 1.8rem;
+  }
+
+  .todo-title {
+    font-size: 1.8rem;
+  }
+  .rendered-todo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .rendered-todo {
+    grid-template-columns: 1fr 1fr;
+  }
+  .completion-logo {
+    margin-top: 3rem;
+    grid-column: span 2;
+    justify-self: center;
+  }
+  .time,
+  .todo-title {
+    margin-top: 2rem;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .rendered-todo {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .card-container {
+    padding: 0.5rem 1rem;
+    width: 80%;
+  }
+  .rendered-todo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .completion-logo {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 230px) {
+  .card-container {
+    /* width: 80%; */
+  }
+}

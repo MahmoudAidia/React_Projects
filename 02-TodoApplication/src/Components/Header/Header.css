@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c3256;
+  padding: 1.5rem 0;
+}
+
+.header-title {
+  font-size: 4.6rem;
+  font-family: "Monoton";
+}
+
+.header-icon {
+  color: white;
+}

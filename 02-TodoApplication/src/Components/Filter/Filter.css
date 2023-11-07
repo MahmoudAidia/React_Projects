@@ -1,0 +1,48 @@
+.filter-container {
+  text-align: center;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.filter-select {
+  width: 20rem;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  outline: none;
+}
+
+.filter-option {
+  border-radius: 10px;
+  outline: none;
+}
+
+.select-label {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+@media (max-width: 530px) {
+  .filter-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 380px) {
+  .filter-select {
+    width: 90%;
+  }
+  .select-label {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .filter-select {
+    padding: 1rem 1.5rem;
+  }
+}

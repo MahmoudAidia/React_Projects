@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.enter-todo-container {
+  padding-top: 3rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.enter-todo-button {
+  padding: 1.5rem 4rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  border: 0;
+  transition: all 0.4s;
+  background-color: #4683bc;
+  font-weight: bold;
+  color: #eee;
+}
+
+.enter-todo-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 #8cb2d5;
+}
+
+.input-container {
+  width: 95%;
+}
+.enter-todo-input {
+  width: 100%;
+  height: 3rem;
+  font-size: 2rem;
+  color: #333;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.enter-todo-input.invalid {
+  border: 3px solid #fa5252;
+}
+
+@media (max-width: 900px) {
+  .enter-todo-button {
+    padding: 1rem 1.5rem;
+  }
+
+  .enter-todo-container {
+    gap: 2rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .enter-todo-button {
+    padding: 1rem 1.5rem;
+  }
+
+  .enter-todo-container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .enter-todo-container {
+    flex-direction: column;
+  }
+
+  .input-container {
+    width: 95%;
+  }
+  .enter-todo-input {
+    width: 100%;
+    font-size: 1.7rem;
+  }
+  .rendered-todos-container {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .message {
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+  }
+  .filter-select {
+    width: 90%;
+  }
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 40%;
+  }
+  .enter-todo-input {
+    padding: 1rem 1.5rem;
+  }
+}

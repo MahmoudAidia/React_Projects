@@ -1,0 +1,14 @@
+.expenses {
+  padding: 1rem;
+  background-color: #0c3256;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+}
+
+.pop-up-message {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
